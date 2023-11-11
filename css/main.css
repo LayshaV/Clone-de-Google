@@ -1,0 +1,245 @@
+body{
+    /* Margin - Margen del elemento*/
+    margin: 0;
+    /* Padding - "Margen" hacia adentro */
+    padding: 0;
+   font-family: Arial, Helvetica, sans-serif; 
+   font-size: 13px;
+}
+
+/***********************************************/
+/******* Navegación *******/
+
+header {
+    width: 100%;
+    height: 80px;
+}
+
+header nav{
+    /*Justificar a la derecha*/
+    /*Nos habilita usar flex-end, flex-start */
+    display: flex;
+    justify-content: flex-end;
+}
+
+header nav .nav-right-section{
+    width: 250px;
+    height: auto;
+    list-style: none;
+    display: flex;
+    justify-self: center;
+    align-items: center;
+}
+
+a {
+    /*Eliminar lineas bajo de texto*/
+    text-decoration: none;
+}
+
+nav .nav-right-section a{
+    color: rgb(6, 7, 7);
+    /**/
+    margin-right: 20px;
+}
+
+/*Icono del menu*/
+nav .nav-right-section .menu {
+    /*Agregar icono desde css*/
+    background-image:url(https://img.icons8.com/ios-glyphs/90/000000/circled-menu.png);
+    /* Que la imagen este contenida en el elemento más grande*/
+    background-size: contain;
+    width: 20px;
+    height: 20px;
+    background-repeat: no-repeat;
+}
+ nav .nav-right-section img {
+    /*Redondeando mis bordes*/
+    border-radius: 100px;
+    /*Cambiar tamaño de la imagen */
+    width: 30px;
+    height: 30px;
+    margin-left: 20px;
+ }
+
+ /******************************************************************/
+ /*******MAIN*******/
+ main {
+    /*Agregar espacio entre header y main*/
+    /*Le vamos a agregar un margen entre el logo y la parte de arriba*/
+    margin-top: 20px;
+    /*Vamos a centrar los elementos*/
+    text-align: center;
+ }
+
+ main .main-logo {
+    width: 800px;
+    /*Esta propiedad me ayuda a central absolutamente gracias a los margenes automaticos*/
+    margin: 0 auto;
+   
+ }
+
+ main .main-logo img{
+    height: 80px; 
+    background-image: url(/image/hellokittylogo6.jpg);
+    padding: 43px;
+    background-size: cover;
+    justify-content: center;
+}
+
+main .letrasdebajo {
+  color: #4d5156;
+  display: inline-block;
+  line-height: 20px;
+  background-size: contain;
+}
+
+main .letrasdebajo a {
+  color: blue;
+  line-height: 20px;
+  margin-top: 0px;
+}
+
+ main .main-input {
+    width: 530px;
+    margin: 0 auto;
+}
+
+main .main-input-container {
+    /*Ancho borde || borde-estilo || borde-color  */
+    border: 1px solid #dfe1e5; 
+    /*Border redondeado*/
+    border-radius: 30px;
+    width: 530px;
+    height: 40px;
+    margin: 0 auto;
+    margin-top: 20px;
+}
+main .main-input-container:hover {
+    box-shadow: 0 4px 8px pink; /* Sombra al pasar el cursor */
+  }
+main .main-input input{
+    height: 35px;
+    /*quitar el borde cuando está activo el input*/
+    outline: none;
+    /* Quitar el borde*/
+    border: none;
+    width: 450px;
+}
+
+main .main-input .search-icon {
+    background-image: url(https://seekicon.com/free-icon-download/search_20.svg);
+    background-size: contain;
+    padding-left: 20px;
+    background-repeat: no-repeat;
+    margin-left: 10px;
+}
+
+main .main-input .micro-icon {
+    background-image:url(https://seeklogo.com/images/G/google-mic-logo-EF440C9A6F-seeklogo.com.png);
+    background-size: contain;
+    padding-left:  10px;
+    background-repeat: no-repeat;
+}
+
+main .main-input .cam-icon {
+    background-image: url(https://www.seoptimer.com/storage/images/2019/03/google-lens.png);
+    background-size:contain;
+    padding-left: 20px;
+    background-repeat: no-repeat;
+    margin-left: 10px;
+}
+
+main .buttons .button1 {
+    background-color:white;
+    background-size: contain;
+    margin: 0 auto;
+    margin-top: 20px;
+    display: inline-block;
+    
+}
+
+main .buttons .button2 {
+    background-color: white;
+    margin: 0 auto;
+    margin-top: 20px;
+    display: inline-block;
+}
+
+main .button1, .button2 {
+    /* Estilos adicionales para los botones */
+    padding: 10px 20px;
+    font-size: 16px;
+  }
+
+main .botones-container {
+    text-align: center; /* Alinea los botones al centro (opcional) */
+  }
+
+main .mi-boton{
+    display: inline-block; /* Coloca los botones en línea */
+    margin-right: 10px; /* Espacio entre los botones (ajustable según tus necesidades) */
+    padding: 10px 20px; /* Ajusta el relleno según tus necesidades */
+    font-size: 16px; /* Ajusta el tamaño de fuente según tus necesidades */
+    margin-top: 20px;
+    background-color:#f8f9fa;
+    box-shadow: none;
+    border: none;
+    font-family: arial,sans-serif;
+    border: none;
+    border-radius: 4px;
+    color: #3c4043;
+    font-family: arial,sans-serif;
+    font-size: 14px;
+    margin: 11px 4px;
+    padding: 0 16px;
+    line-height: 27px;
+    height: 36px;
+    min-width: 54px;
+    text-align: center;
+  }
+main .mi-boton:hover {
+    border: 1px solid #dadce0;
+  } 
+
+ /*Pie de página FOOTER*/
+
+ footer {
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  font-size: 14px;
+  background-color:#f2f2f2;
+ }
+.footer-mexico {
+    padding: 10px 20px;
+    border-bottom: 1px solid #dadce0;
+    text-align: left;
+  
+  }
+
+.footer-menu {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+  }
+
+.footer-left a {
+   text-decoration: none;
+   color: #202124;
+   padding: 0 20px 0 0;
+  }
+.footer-right a {
+    text-decoration: none;
+    color: #202124;
+    padding: 0 20px 0 0;
+   }
+
+.footer-left a:hover{
+  text-decoration: underline;
+}
+
+.footer-right a:hover{
+  text-decoration: underline;
+}
